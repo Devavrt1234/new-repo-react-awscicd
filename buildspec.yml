@@ -6,7 +6,9 @@ phases:
       - npm install
   build:
     commands:
-      - npm start
+      - sudo apt install nginx
+      - cp public/index.html /var/www/html
+      - sudo systemctl restart nginx
       
       
 
