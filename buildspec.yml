@@ -6,8 +6,7 @@ phases:
       - npm install
   build:
     commands:
-      - npm install -g serve
-      - serve -s build
+      - npm start
       
       
 
