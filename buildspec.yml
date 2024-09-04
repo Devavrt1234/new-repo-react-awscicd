@@ -4,9 +4,9 @@ phases:
   install:
     commands:
       - npm install
+      - apt install nginx -y
   build:
     commands:
-      - apt install nginx -y
       - cp public/index.html /var/www/html
       - sudo systemctl restart nginx
       
